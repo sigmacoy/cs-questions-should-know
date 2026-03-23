@@ -1,8 +1,8 @@
 # Questions every comp-sci major should know
 
-1. [What is an algorithm?](#1-what-is-an-algorithm?)
+1. [What is an algorithm?](#1-what-is-an-algorithm)
 2. [Array vs. Linked List](#2-array-vs-linked-list)
-3. [What is the role of an Operating System (OS)?](#3-what-is-the-role-of-an-operating-system)
+3. [What is the role of an Operating System (OS)?](#3-what-is-the-role-of-an-operating-system-os)
 4. [What is Big O notation?](#4-what-is-big-o-notation)
 5. [Compiler vs. Interpreter](#5-compiler-vs-interpreter)
 
