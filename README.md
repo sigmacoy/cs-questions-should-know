@@ -5,7 +5,7 @@
 3. [What is the role of an Operating System (OS)?](#3-what-is-the-role-of-an-operating-system-os)
 4. [What is Big O notation?](#4-what-is-big-o-notation)
 5. [Compiler vs. Interpreter](#5-compiler-vs-interpreter)
-
+6. [Concurrency vs Parallelism](#6-concurrency-vs-parallelism)
 
 ## 1. What is an algorithm?
 An algorithm is a finite, well-defined sequence of steps or rules designed to perform a specific task or solve a particular problem. It takes an input, processes it through a series of deterministic instructions, and produces an output. Beyond just being a set of instructions, an algorithm must be correct (producing the right output for all inputs), finite (terminating after a finite number of steps), and efficient in its use of resources like time and memory. From a simple recipe for baking a cake to complex routing protocols on the internet, algorithms are the fundamental building blocks of all software.
@@ -23,3 +23,5 @@ Big O notation is a mathematical concept used in computer science to describe th
 Both compilers and interpreters are programs that translate high-level source code into a form that a computer can execute, but they operate in fundamentally different ways. A compiler translates the entire source code into a standalone, low-level machine code file (e.g., an executable) in one go, before any execution occurs. This process is generally slower upfront but results in fast execution afterward. An interpreter, on the other hand, translates and executes the source code line-by-line or statement-by-statement at runtime, without generating a separate machine code file. This allows for greater flexibility and easier debugging (as execution can pause mid-run), but typically results in slower overall execution speed compared to compiled code. Languages like C and Rust are typically compiled, while Python and JavaScript are commonly interpreted (or use Just-In-Time compilation for optimization).
 
 ## 6. Concurrency vs Parallelism 
+Concurrency is about dealing with multiple tasks at once, focusing on structure and task interleaving where tasks make progress in overlapping time periods, but not necessarily simultaneously—it enables a single-core system to handle multiple operations by switching between them.
+Parallelism, in contrast, is about doing multiple tasks at the exact same time, requiring multiple processing units to execute operations simultaneously. Concurrency is about managing complexity and dealing with many things at once, while parallelism is about throughput and executing many things at once. They are related but distinct: you can have concurrency without parallelism (single-core multitasking), but parallelism inherently enables concurrency.
