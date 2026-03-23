@@ -22,4 +22,4 @@ Big O notation is a mathematical concept used in computer science to describe th
 ## 5. Compiler vs. Interpreter
 Both compilers and interpreters are programs that translate high-level source code into a form that a computer can execute, but they operate in fundamentally different ways. A compiler translates the entire source code into a standalone, low-level machine code file (e.g., an executable) in one go, before any execution occurs. This process is generally slower upfront but results in fast execution afterward. An interpreter, on the other hand, translates and executes the source code line-by-line or statement-by-statement at runtime, without generating a separate machine code file. This allows for greater flexibility and easier debugging (as execution can pause mid-run), but typically results in slower overall execution speed compared to compiled code. Languages like C and Rust are typically compiled, while Python and JavaScript are commonly interpreted (or use Just-In-Time compilation for optimization).
 
-
+## 6. Concurrency vs Parallelism 
