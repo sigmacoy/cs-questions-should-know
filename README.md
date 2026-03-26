@@ -6,6 +6,17 @@
 4. [What is Big O notation?](#4-what-is-big-o-notation)
 5. [Compiler vs. Interpreter](#5-compiler-vs-interpreter)
 6. [Concurrency vs Parallelism](#6-concurrency-vs-parallelism)
+7. [What is OOP?](#7-what-is-oop)
+8. [What is deadlock?](#8-what-is-deadlock)
+9. [Process vs Threads?](#9-process-vs-threads)
+10. [What is race condition?](#10-what-is-race-condition)
+11. [What is Dynamic Programming?](#11-what-is-dynamic-programming)
+12. [What is mutex?](#12-what-is-mutex)
+13. [Stack vs Heap](#13-stack-vs-heap)
+14. [RAM vs ROM](#14-ram-vs-rom)
+15. [Supervised vs Unsupervised](#15-supervised-vs-unsupervised)
+16. [What is CPU?](#16-what-is-cpu)
+17. [Compiler vs Interpreter](#17-compiler-vs-interpreter)
 
 ## 1. What is an algorithm?
 An algorithm is a finite, well-defined sequence of steps or rules designed to perform a specific task or solve a particular problem. It takes an input, processes it through a series of deterministic instructions, and produces an output. Beyond just being a set of instructions, an algorithm must be correct (producing the right output for all inputs), finite (terminating after a finite number of steps), and efficient in its use of resources like time and memory. From a simple recipe for baking a cake to complex routing protocols on the internet, algorithms are the fundamental building blocks of all software.
@@ -55,6 +66,12 @@ Parallelism, in contrast, is about doing multiple tasks at the exact same time, 
 The four pillars of Object-Oriented Programming (OOP) are encapsulation, abstraction, inheritance, and polymorphism. Encapsulation bundles data and methods into objects while hiding internal details; abstraction simplifies complexity by exposing only essential features; inheritance allows new classes to reuse and extend existing code; polymorphism enables objects of different types to be treated uniformly through a common interface. OOP is important because it promotes modularity, reusability, and maintainability, making complex software easier to design, debug, and scale. It is widely applied in GUI applications, game development, enterprise systems (like Java Spring), simulations, and mobile app development, where modeling real-world entities as objects naturally aligns with problem domains.
 
 ## 8. What is deadlock?
+Deadlock occurs when two threads are each waiting for a resource held by the other, causing both to wait forever.
+```java
+Thread 1: holds lock A, waiting for lock B
+Thread 2: holds lock B, waiting for lock A
+```
+### Both threads are blocked indefinitely, and neither can proceed.
 
 ## 9. Process vs Threads?
 **Process**: Independent program with own memory space
