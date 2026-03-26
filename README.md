@@ -16,7 +16,7 @@
 14. [RAM vs ROM](#14-ram-vs-rom)
 15. [Supervised vs Unsupervised](#15-supervised-vs-unsupervised)
 16. [What is CPU?](#16-what-is-cpu)
-17. [Compiler vs Interpreter](#17-compiler-vs-interpreter)
+17. [Stack vs Heap](#17-stack-vs-heap)
 
 ## 1. What is an algorithm?
 An algorithm is a finite, well-defined sequence of steps or rules designed to perform a specific task or solve a particular problem. It takes an input, processes it through a series of deterministic instructions, and produces an output. Beyond just being a set of instructions, an algorithm must be correct (producing the right output for all inputs), finite (terminating after a finite number of steps), and efficient in its use of resources like time and memory. From a simple recipe for baking a cake to complex routing protocols on the internet, algorithms are the fundamental building blocks of all software.
