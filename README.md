@@ -12,7 +12,7 @@
 10. [What is race condition?](#10-what-is-race-condition)
 11. [What is Dynamic Programming?](#11-what-is-dynamic-programming)
 12. [What is mutex?](#12-what-is-mutex)
-13. [Stack vs Heap](#13-stack-vs-heap)
+13. [Given problem](#13-given-problem)
 14. [RAM vs ROM](#14-ram-vs-rom)
 15. [Supervised vs Unsupervised](#15-supervised-vs-unsupervised)
 16. [What is CPU?](#16-what-is-cpu)
