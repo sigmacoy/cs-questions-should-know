@@ -138,7 +138,7 @@ Unsupervised - the model learns by itself
 	- finds patterns in unlabeled data without predefined outputs.
 
 ## 16. What is CPU?
-- Central Processing Unit
+Central Processing Unit
 It's the brain that runs all programs and processes.
 Algorithm of the CPU is:
 1. **Fetch** - get instruction from memory
