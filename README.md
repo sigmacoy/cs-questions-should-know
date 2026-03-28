@@ -111,6 +111,9 @@ This makes threads take turns, preventing the race condition.
 ## 11. What is Dynamic Programming?
 Dynamic Programming = Solving complex problems by breaking into overlapping subproblems and storing results to avoid recomputation. Either memoization (top-down) or Tabulation (bottom-up). Algorithm technique to optimization problems.
 
+Do research about fibonacci recursion when n is big <br>
+Compared to using DP <br>
+
 ## 12. What is mutex?
 The method used by the OS (along with other alternatives) to protect a common memory section from 2 or more threads accessing it at the same time., specially useful if both threads are interconnected and can cause deadlocks.
 
