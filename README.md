@@ -156,3 +156,15 @@ Heap: Dynamic memory you manually allocate (with `new`, `malloc`) - size unkno
 ### Why even store in the heap? even tho heap is slower:
 **Stack size is limited** (typically 1-8MB), while **heap can use all available RAM**.
 Large data structures, dynamic allocations, or long-lived objects must go on heap.
+
+## 18. Dynamic Programming vs Divide and Conquer
+Dynamic Programming: Solves subproblems once, stores results (memoization/tabulation). Overlapping subproblems. <br>
+Divide and Conquer: Divides problem into independent subproblems, solves recursively, combines results. No overlapping. <br>
+Key difference: DP stores results for reuse; D&C solves each subproblem fresh. <br>
+
+Fresh means: Divide and Conquer solves the SAME subproblem multiple times from scratch. <br>
+Example - Fibonacci: <br>
+Divide & Conquer (bad): <br>
+fib(5) calls fib(4) and fib(3) <br>
+fib(4) calls fib(3) and fib(2) <br>
+fib(3) is calculated TWICE (fresh each time) <br>
