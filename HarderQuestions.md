@@ -1,6 +1,6 @@
 # Harder Questions
 
-1. What is Halting problem and how does Turing proves about it?
+## 1. What is Halting problem and how does Turing proves about it?
 Halting Problem: Determine if a program will eventually stop (halt) or run forever.<br>
 Turing's Proof: Impossible. He proved by contradiction:<br>
    1. Assume a machine H exists that can check if any program halts<br>
