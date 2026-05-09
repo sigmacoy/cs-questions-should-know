@@ -52,14 +52,14 @@ O(n²) = 10¹⁰ operations → too slow <br>
 **Interpreter** translates and executes code **line by line during runtime**: <br>
 - **Python**: Interpreted line by line  <br>
 - **JavaScript**: Interpreted in browsers <br>
-**Key differences**: <br>
+### Key differences: <br>
 - **Compiler**: Faster execution, but slower startup (needs compilation) <br>
 - **Interpreter**: Slower execution, but immediate execution (no separate compile step) <br>
-**Java is both**: Compiled to bytecode, then interpreted by JVM (with JIT compilation) <br>
+### Java is both: Compiled to bytecode, then interpreted by JVM (with JIT compilation) <br>
 Python: (.py → bytecode → PVM execution) <br>
 
 ## 6. Concurrency vs Parallelism 
-Concurrency is about dealing with multiple tasks at once, focusing on structure and task interleaving where tasks make progress in overlapping time periods, but not necessarily simultaneously—it enables a single-core system to handle multiple operations by switching between them. <br>
+Concurrency is about dealing with multiple tasks at once, focusing on structure and task interleaving where tasks make progress in overlapping time periods, but not necessarily simultaneously—it enables a single-core system to handle multiple operations by switching between them. <br><br>
 Parallelism, in contrast, is about doing multiple tasks at the exact same time, requiring multiple processing units to execute operations simultaneously. Concurrency is about managing complexity and dealing with many things at once, while parallelism is about throughput and executing many things at once. They are related but distinct: you can have concurrency without parallelism (single-core multitasking), but parallelism inherently enables concurrency.
 
 ## 7. What is OOP?
@@ -131,12 +131,12 @@ Object *obj = new Object();
 
 ## 14. RAM vs ROM
 RAM (Random Access Memory) - temporary and volatile, losing its data when the device loses power.  <br>
-ROM is generally considered permanent or non-volatile memory, meaning it retains its data even when the power is turned off. <br>
+ROM is generally considered permanent or non-volatile memory, meaning it retains its data even when the power is turned off. <br> <br>
 Most ROM are permanent, newer types can be rewritten under special circumstances, although they still function as a permanent storage for essential system like the BIOS and firmware. <br>
 
 ## 15. Supervised vs Unsupervised
 Supervised - given input and needed correct output <br>
-	- uses labeled data (input-output pairs) <br>
+	- uses labeled data (input-output pairs) <br> <br>
 Unsupervised - the model learns by itself <br>
 	- finds patterns in unlabeled data without predefined outputs. <br>
 
