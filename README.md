@@ -74,13 +74,13 @@ Thread 2: holds lock B, waiting for lock A
 ### Both threads are blocked indefinitely, and neither can proceed.
 
 ## 9. Process vs Threads?
-**Process**: Independent program with own memory space <br>
+### Process: Independent program with own memory space <br>
 - Isolated, crash doesn't affect others <br>
 - Heavyweight, more overhead <br>
-**Thread**: Lightweight unit within a process <br>
+### Thread: Lightweight unit within a process <br>
 - Shares memory with other threads <br>
 - Fast creation, but less isolated <br>
-**Example**: Browser = process, each tab = thread <br>
+### Example: Browser = process, each tab = thread <br>
 
 
 ## 10. What is race condition?
