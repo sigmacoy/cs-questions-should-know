@@ -30,36 +30,36 @@ An array stores elements in contiguous memory locations and allows fast random a
 The operating system acts as a privileged intermediary between the user applications and the computer hardware. Its primary role is abstraction and resource management. It abstracts away the complexity of raw hardware—such as CPUs, RAM, and storage—providing a clean, consistent interface (like files, processes, and sockets) for application developers. Concurrently, it manages the finite physical resources of the system, arbitrating which processes get CPU time (scheduling), how much memory they can use (memory management), and how they access I/O devices, ensuring system stability, security, and fair performance across multiple running applications.
 
 ## 4. What is Big O notation?
-Big O notation is a mathematical concept used in computer science to describe the upper bound or worst-case scenario of an algorithm's growth rate as the input size ($n$) approaches infinity. It classifies algorithms by how their runtime (time complexity) or memory usage (space complexity) scales with input size, ignoring constants and lower-order terms. For example, $O(1)$ denotes constant time (e.g., array access), $O(n)$ denotes linear time (e.g., a simple loop), and $O(n^2)$ denotes quadratic time (e.g., a nested loop). It provides a high-level, hardware-independent language to compare the efficiency and scalability of different algorithms, helping developers predict performance bottlenecks as data volumes grow.
+Big O notation is a mathematical concept used in computer science to describe the upper bound or worst-case scenario of an algorithm's growth rate as the input size ($n$) approaches infinity. It classifies algorithms by how their runtime (time complexity) or memory usage (space complexity) scales with input size, ignoring constants and lower-order terms. For example, $O(1)$ denotes constant time (e.g., array access), $O(n)$ denotes linear time (e.g., a simple loop), and $O(n^2)$ denotes quadratic time (e.g., a nested loop). It provides a high-level, hardware-independent language to compare the efficiency and scalability of different algorithms, helping developers predict performance bottlenecks as data volumes grow. <br>
 
-More
+More <br>
 
-Time Complexity: How runtime grows with input size
-Space Complexity: How memory usage grows with input size
-**Examples**:
-- O(1): Constant - direct array access
-- O(log n): Logarithmic search or binary search
-- O(n): Linear - iterating through array
-- O(n²): Quadratic - nested loops
-**For example: A Leetcode problem constraint is 10⁵**:  
-Need O(n) or O(n log n) solution  
-O(n²) = 10¹⁰ operations → too slow
+Time Complexity: How runtime grows with input size <br>
+Space Complexity: How memory usage grows with input size <br>
+**Examples**: <br>
+- O(1): Constant - direct array access <br>
+- O(log n): Logarithmic search or binary search <br>
+- O(n): Linear - iterating through array <br>
+- O(n²): Quadratic - nested loops <br>
+**For example: A Leetcode problem constraint is 10⁵**:   <br>
+Need O(n) or O(n log n) solution   <br>
+O(n²) = 10¹⁰ operations → too slow <br>
 
 ## 5. Compiler vs. Interpreter
-**Compiler** translates entire source code to machine code **before execution**:
-- **C++**, **C**: Compiled to native machine code
-- **Java**: Compiled to bytecode (then interpreted by JVM)
-**Interpreter** translates and executes code **line by line during runtime**:
-- **Python**: Interpreted line by line 
-- **JavaScript**: Interpreted in browsers
-**Key differences**:
-- **Compiler**: Faster execution, but slower startup (needs compilation)
-- **Interpreter**: Slower execution, but immediate execution (no separate compile step)
-**Java is both**: Compiled to bytecode, then interpreted by JVM (with JIT compilation)
-Python: (.py → bytecode → PVM execution)
+**Compiler** translates entire source code to machine code **before execution**: <br>
+- **C++**, **C**: Compiled to native machine code <br>
+- **Java**: Compiled to bytecode (then interpreted by JVM) <br>
+**Interpreter** translates and executes code **line by line during runtime**: <br>
+- **Python**: Interpreted line by line  <br>
+- **JavaScript**: Interpreted in browsers <br>
+**Key differences**: <br>
+- **Compiler**: Faster execution, but slower startup (needs compilation) <br>
+- **Interpreter**: Slower execution, but immediate execution (no separate compile step) <br>
+**Java is both**: Compiled to bytecode, then interpreted by JVM (with JIT compilation) <br>
+Python: (.py → bytecode → PVM execution) <br>
 
 ## 6. Concurrency vs Parallelism 
-Concurrency is about dealing with multiple tasks at once, focusing on structure and task interleaving where tasks make progress in overlapping time periods, but not necessarily simultaneously—it enables a single-core system to handle multiple operations by switching between them.
+Concurrency is about dealing with multiple tasks at once, focusing on structure and task interleaving where tasks make progress in overlapping time periods, but not necessarily simultaneously—it enables a single-core system to handle multiple operations by switching between them. <br>
 Parallelism, in contrast, is about doing multiple tasks at the exact same time, requiring multiple processing units to execute operations simultaneously. Concurrency is about managing complexity and dealing with many things at once, while parallelism is about throughput and executing many things at once. They are related but distinct: you can have concurrency without parallelism (single-core multitasking), but parallelism inherently enables concurrency.
 
 ## 7. What is OOP?
@@ -74,13 +74,13 @@ Thread 2: holds lock B, waiting for lock A
 ### Both threads are blocked indefinitely, and neither can proceed.
 
 ## 9. Process vs Threads?
-**Process**: Independent program with own memory space
-- Isolated, crash doesn't affect others
-- Heavyweight, more overhead
-**Thread**: Lightweight unit within a process
-- Shares memory with other threads
-- Fast creation, but less isolated
-**Example**: Browser = process, each tab = thread
+**Process**: Independent program with own memory space <br>
+- Isolated, crash doesn't affect others <br>
+- Heavyweight, more overhead <br>
+**Thread**: Lightweight unit within a process <br>
+- Shares memory with other threads <br>
+- Fast creation, but less isolated <br>
+**Example**: Browser = process, each tab = thread <br>
 
 
 ## 10. What is race condition?
@@ -94,11 +94,11 @@ void withdraw(int amount) {
     }
 }
 ```
-**Thread 1**: `withdraw(80)` → checks balance (100), thinks it's OK  
-**Thread 2**: `withdraw(80)` → also checks balance (100), thinks it's OK  
-**Both subtract 80**: Balance becomes -60 (wrong!)
-**Final result depends on timing** - if threads ran sequentially, only one would succeed.
-Soln: Use `synchronized` keyword
+**Thread 1**: `withdraw(80)` → checks balance (100), thinks it's OK   <br>
+**Thread 2**: `withdraw(80)` → also checks balance (100), thinks it's OK   <br>
+**Both subtract 80**: Balance becomes -60 (wrong!) <br>
+**Final result depends on timing** - if threads ran sequentially, only one would succeed. <br>
+Soln: Use `synchronized` keyword <br>
 ```java
 synchronized void withdraw(int amount) {
     if (balance >= amount) {
@@ -109,7 +109,7 @@ synchronized void withdraw(int amount) {
 This makes threads take turns, preventing the race condition.
 
 ## 11. What is Dynamic Programming?
-Dynamic Programming = Solving complex problems by breaking into overlapping subproblems and storing results to avoid recomputation. Either memoization (top-down) or Tabulation (bottom-up). Algorithm technique to optimization problems.
+Dynamic Programming = Solving complex problems by breaking into overlapping subproblems and storing results to avoid recomputation. Either memoization (top-down) or Tabulation (bottom-up). Algorithm technique to optimization problems. <br>
 
 Do research about fibonacci recursion when n is big <br>
 Compared to using DP <br>
@@ -123,39 +123,39 @@ Object obj = new Object();
 Object *obj = new Object();
 ```
 ### Why do we even use *obj ?
-- Object needs to outlive the scope → survives after function returns
-- Large objects → stack has limited size (typically 1-8 MB), heap is much larger
-- Polymorphism → dynamic binding with virtual functions works properly
-- Unknown size at compile time → arrays, containers, etc.
-- Manual control → you decide exactly when it's created and destroyed
+- Object needs to outlive the scope → survives after function returns <br>
+- Large objects → stack has limited size (typically 1-8 MB), heap is much larger <br>
+- Polymorphism → dynamic binding with virtual functions works properly <br>
+- Unknown size at compile time → arrays, containers, etc. <br>
+- Manual control → you decide exactly when it's created and destroyed <br>
 
 ## 14. RAM vs ROM
-RAM (Random Access Memory) - temporary and volatile, losing its data when the device loses power. 
-ROM is generally considered permanent or non-volatile memory, meaning it retains its data even when the power is turned off.
-Most ROM are permanent, newer types can be rewritten under special circumstances, although they still function as a permanent storage for essential system like the BIOS and firmware. 
+RAM (Random Access Memory) - temporary and volatile, losing its data when the device loses power.  <br>
+ROM is generally considered permanent or non-volatile memory, meaning it retains its data even when the power is turned off. <br>
+Most ROM are permanent, newer types can be rewritten under special circumstances, although they still function as a permanent storage for essential system like the BIOS and firmware. <br>
 
 ## 15. Supervised vs Unsupervised
-Supervised - given input and needed correct output
-	- uses labeled data (input-output pairs)
-Unsupervised - the model learns by itself
-	- finds patterns in unlabeled data without predefined outputs.
+Supervised - given input and needed correct output <br>
+	- uses labeled data (input-output pairs) <br>
+Unsupervised - the model learns by itself <br>
+	- finds patterns in unlabeled data without predefined outputs. <br>
 
 ## 16. What is CPU?
-Central Processing Unit
-It's the brain that runs all programs and processes.
-Algorithm of the CPU is:
-1. **Fetch** - get instruction from memory
+Central Processing Unit <br>
+It's the brain that runs all programs and processes. <br>
+Algorithm of the CPU is: <br>
+1. **Fetch** - get instruction from memory 
 2. **Decode** - understand what to do
 3. **Execute** - perform the operation
 Repeats billions of times per second.
 
 ## 17. Stack vs Heap
-**Stack**: Automatic memory for function calls and local variables - size known at compile time, automatically cleaned when function exits.
-Heap: Dynamic memory you manually allocate (with `new`, `malloc`) - size unknown at compile time, lives until you `free` it.
+**Stack**: Automatic memory for function calls and local variables - size known at compile time, automatically cleaned when function exits. <br>
+**Heap**: Dynamic memory you manually allocate (with `new`, `malloc`) - size unknown at compile time, lives until you `free` it. <br>
 
 ### Why even store in the heap? even tho heap is slower:
-**Stack size is limited** (typically 1-8MB), while **heap can use all available RAM**.
-Large data structures, dynamic allocations, or long-lived objects must go on heap.
+**Stack size is limited** (typically 1-8MB), while **heap can use all available RAM**. <br>
+Large data structures, dynamic allocations, or long-lived objects must go on heap. <br>
 
 ## 18. Dynamic Programming vs Divide and Conquer
 Dynamic Programming: Solves subproblems once, stores results (memoization/tabulation). Overlapping subproblems. <br>
